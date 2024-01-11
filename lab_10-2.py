@@ -15,21 +15,17 @@ Using the same approach as lab 1, write a program that prints all the numbers th
 
 """
 
-#Author: Andrew Tkacs
+# Author: Andrew Tkacs
 
-# Initialize sum variable to keep track of the sum
-total_sum = 0
+# list of numbers
+numbers_list = [1, 3, 6, 9, 12, 15, 18, 21, 24, 27]
 
-while True:
-    # Prompt user for input
-    user_input = int(input("Enter a number (or -1 to end): "))
+#Iterate through the list
+for num in numbers_list:
+    # Check if the number is not a multiple of 3
+    if num % 3 != 0:
+        continue
 
-    # Check if the user wants to end the program
-    if user_input == -1:
-        break
+    # Print the number if it is a multiple of 3
+    print(num)
 
-    # Add the entered number to the sum
-    total_sum += user_input
-
-# Display the sum of all entered numbers
-print(f"Sum of numbers entered: {total_sum}")

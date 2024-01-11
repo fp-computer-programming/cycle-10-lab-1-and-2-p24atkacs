@@ -15,16 +15,16 @@ Using the same approach as lab 1, write a program that prints all the numbers th
 
 """
 
-#Author: Andrew Tkacs
+# Author: Andrew Tkacs
 
-# Initialize sum variable to keep track of the sum
+# sum variable to keep track of the sum
 total_sum = 0
 
 while True:
     # Prompt user for input
     user_input = int(input("Enter a number (or -1 to end): "))
 
-    # Check if the user wants to end the program
+    # ends the code if the person enters -1
     if user_input == -1:
         break
 
